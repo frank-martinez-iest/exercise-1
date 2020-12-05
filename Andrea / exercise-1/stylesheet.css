@@ -1,0 +1,171 @@
+/* Universal */
+
+*{
+    margin :0;
+    padding : 0;
+    box-sizing : border-box;
+
+}
+
+main{
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 16px ;
+    text-transform: capitalize;
+}
+
+/* Header*/
+a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a img, li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+li{
+    list-style: none;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+span {
+    display: block;
+}
+
+
+
+/* Especifico */
+.hero {
+    position: relative;
+    width: 100wv;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontalmente */
+    align-items: center; /* Verticalmente */
+    
+}
+
+.hero h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 55px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.section-menu {
+    margin: 0 16px;
+}
+
+.body {
+  display: flex; /* The default is flex-direction:row; */
+  align-items: center;
+} 
+
+.body-img {
+    display: flex;
+    align-items: center;
+}
+
+.body-img img {
+    width: 150px;
+    height: 300px;
+    margin-right: 24px;
+    margin-left: 8px;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    margin-right: 24px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.title-span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.recommendations{
+    margin-top: 8px;
+    margin-right: 8px;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.recommendations li{
+    line-height: 1.5;
+}
+.logo {
+    width: 40px;
+    height: 80px;
+    flex: 0.5;
+    margin-right: 16px;
+}
+
+.top-menu, .footer-menu, .section-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-menu__links, .footer-menu__links{
+    display: flex;
+    flex: 3;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-menu__button, .footer-menu__button {
+    border: 1px solid brown;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.footer-menu__input{
+    font-size: 16px;
+}
+
+.footer-menu__social {
+    display: flex;
+    flex: 0.2;
+    justify-content: space-around;
+}
