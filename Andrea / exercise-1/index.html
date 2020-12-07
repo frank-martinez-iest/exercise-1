@@ -9,7 +9,9 @@
 <body>
     <header>
        <nav class="top-menu">
-        <img class="logo" src="logo.png" alt="imagen">
+           <div class="logo">
+               <img class="logo__imagen" src="logo.png" alt="logotype">
+           </div>
            <ul class="top-menu__links">
                <li>
                    <a href="#">features</a>
@@ -24,13 +26,12 @@
                    <a href="#">pricing</a>
                </li>
                <!-- Botones -->
-               <li>
-                   <a class="top-menu__button" href="#">sign in</a>
-               </li>
-               <li>
-                   <a class="top-menu__button" href="#">sign up</a>
-               </li>
            </ul>
+           <div class="top-menu__button" >
+               <button type="submit">sign in</button>
+               <button type="submit">sign up</button>
+           </div>
+           
        </nav>
 
         <!-- Greetings -->
@@ -40,34 +41,34 @@
     </header>
 
 
-    <!-- Achievements -->
-    <section>
-        <ul class="section-menu">
-            <li>
-                <p><img src="icon.png" alt="icon">genres</p>
-            </li>
-            <li>
-                <p><img src="icon.png" alt="icon">buy</p>
-            </li>
-            <li>
-                <p><img src="icon.png" alt="icon">fanart</p>
-            </li>
-            <li>
-                <p><img src="icon.png" alt="icon">communities</p>
-            </li>
-    </section>
-
     <main>
+        <!-- Achievements -->
+        <section>
+            <ul class="section-menu">
+                <li>
+                    <p><img src="icon.png" alt="icon">genres</p>
+                </li>
+                <li>
+                    <p><img src="icon.png" alt="icon">buy</p>
+                </li>
+                <li>
+                    <p><img src="icon.png" alt="icon">fanart</p>
+                </li>
+                <li>
+                    <p><img src="icon.png" alt="icon">communities</p>
+                </li>
+        </section>
+
         <div class="title">
-            <p><span class="title-span">read<br>more</span> open your eyes</p>
+            <h1><span class="title-span">read more</span> open your eyes</h1>
         </div>
         
-        <div class="body">
+        <div class="info">
             <!-- <section class="columns-format"> quitar esta clase y ponerla en body -->
-                <div class="body-img">
-                    <img src="side_img.jpg" alt="imagen">
+                <div class="info-img">
+                    <img src="side_img.jpg" alt="books in a library">
                 </div>
-                <div class="body-content">
+                <div class="info-text">
                     <h3>why you should read more</h3>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -114,7 +115,7 @@
 
     <footer>
         <nav class="footer-menu">
-            <img class="logo" src="logo.png" alt="image">
+            <img class="logo" src="logo.png" alt="logotype">
             <ul class="footer-menu__links">
                 <li>
                     <a href="#">travel</a>
@@ -129,16 +130,12 @@
                     <a href="#">about us</a>
                 </li>
                 <li>
-                    <a href="#">contacts</a>
-                </li>
-                <!-- Botones -->
-                <li>
-                    <input class="footer-menu__input" type="text" placeholder="Your email">
-                </li>
-                <li>
-                    <a class="footer-menu__button" href="#">send</a>
-                </li>
+                    <a href="#">contacts</a>    
             </ul>
+            <form>
+                <input class="footer-menu__input" type="email" placeholder="Your email">
+                <button class="footer-menu__button" type="button">send</button>
+            </form>
             
         </nav>
             
