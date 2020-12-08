@@ -18,31 +18,23 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="container navbar">
-        <ul class="navbar__list">
-          <li class="navbar__list-logo">
-            <a href="/"><img src="" alt="Logo" /></a>
-          </li>
-          <li class="navbar__list-items">
-            <a href="#">Features</a>
-            <a href="#">Templates</a>
-            <a href="#">Integrations</a>
-            <a href="#">Pricing</a>
-          </li>
-          <li class="navbar__list-buttons">
-            <button class="btn btn--filled">Sign In</button>
-            <button class="btn btn--outline">Sign Up</button>
-          </li>
-        </ul>
-      </nav>
-
-      <section class="hero">
-        <div class="hero__content">
-          <h1>Hola soy Josué</h1>
-          <h2>Desarrollador Web</h2>
-        </div>
-      </section>
+    <nav class="container navbar">
+      <ul class="navbar__list">
+        <li class="navbar__logo">
+          <a href="/"><img src="" alt="Logo" /></a>
+        </li>
+        <li class="navbar__list-item"><a href="#">Features</a></li>
+        <li class="navbar__list-item"><a href="#">Templates</a></li>
+        <li class="navbar__list-item"><a href="#">Integrations</a></li>
+        <li class="navbar__list-item"><a href="#">Pricing</a></li>
+      </ul>
+      <button class="btn btn--filled">Sign In</button>
+      <button class="btn btn--outline">Sign Up</button>
+    </nav>
+    <header class="hero">
+      <div class="hero__content">
+        <h1>Hola soy Josué <span> Desarrollador Web</span></h1>
+      </div>
     </header>
 
     <section class="container achievements">
@@ -72,8 +64,7 @@
       <!--PARTE UNO-->
       <section class="main-content__left">
         <!--Un heading-->
-        <p>THE AMAZING HUBBLE</p>
-        <h2>Spend Less Time Coding</h2>
+        <h1>The Amazing Hubble <span>Spend Less Time Coding</span></h1>
         <div class="main-content__left-post">
           <figure>
             <img
@@ -82,7 +73,7 @@
             />
             <figcaption>Just another random image</figcaption>
           </figure>
-          <div class="main-content__blog">
+          <article class="main-content__blog">
             <article>
               <h4>Become a power-user</h4>
               <p>
@@ -101,7 +92,7 @@
                 similique voluptatum perferendis
               </p>
             </article>
-          </div>
+          </article>
         </div>
       </section>
       <!--ASIDE-->
@@ -141,25 +132,21 @@
     </main>
     <footer class="container">
       <!--PARTE ARRIBA-->
-      <nav class="navbar">
+      <nav class="navbar navbar-footer">
         <ul class="navbar__list">
-          <li class="navbar__list-logo">
+          <li class="navbar__logo">
             <a href="/"><img src="" alt="Nav logo" /></a>
           </li>
-          <li><a href="/travel">Travel</a></li>
-          <li><a href="/travel">Explore</a></li>
-          <li><a href="/travel">Works</a></li>
-          <li><a href="/travel">About Us</a></li>
-          <li><a href="/travel">Contacts</a></li>
-          <li>
-            <form>
-              <label
-                >Your Email<input type="text" id="Name" name="Name"
-              /></label>
-              <button class="btn btn--filled" type="submit">Send</button>
-            </form>
-          </li>
+          <li class="navbar__list-item"><a href="/travel">Travel</a></li>
+          <li class="navbar__list-item"><a href="/travel">Explore</a></li>
+          <li class="navbar__list-item"><a href="/travel">Works</a></li>
+          <li class="navbar__list-item"><a href="/travel">About Us</a></li>
+          <li class="navbar__list-item"><a href="/travel">Contacts</a></li>
         </ul>
+        <form class="navbar-footer__form">
+          <label>Your Email<input type="text" id="Name" name="Name" /></label>
+          <button class="btn btn--filled" type="submit">Send</button>
+        </form>
       </nav>
       <hr />
       <!--PARTE DOS-->
@@ -170,16 +157,14 @@
             <li class="mr-1"><a href="#">Promo</a></li>
             <li class="mr-1"><a href="#">Download</a></li>
             <li class="mr-1"><a href="#">News</a></li>
-            <li>
-              <div>
-                <!--ICONS-->
-                <i class="mr-1 fab fa-twitter"></i>
-                <i class="mr-1 fab fa-twitter"></i>
-                <i class="mr-1 fab fa-twitter"></i>
-                <i class="fab fa-twitter"></i>
-              </div>
-            </li>
           </ul>
+          <div class="footer__bottom-social">
+            <!--ICONS-->
+            <i class="mr-1 fab fa-twitter"></i>
+            <i class="mr-1 fab fa-twitter"></i>
+            <i class="mr-1 fab fa-twitter"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
         </nav>
       </div>
     </footer>
