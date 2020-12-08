@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="normalize.css">
   <title>First Task</title>
 </head>
 <body>
@@ -26,93 +27,102 @@
       </div>
     </nav>
     <div class="hero">
-      <h3>Hola, me llamo</h3>
-      <h1>Jorge</h1>
+      <h1>Hola, me llamo <span class="hero__my-name">Jorge</span></h1>
     </div>
     <section class="achivements">
       <div class="achivements__item">
-        <span>10</span>
-        Años de experiencia
+        <p>
+          <span>10</span>
+          Años de experiencia
+        </p>
       </div>
       <div class="achivements__item">
-        <span>10</span>
-        Galardones
+        <p>
+          <span>10</span>
+          Galardones
+        </p>
       </div>
       <div class="achivements__item">
-        <span>10</span>
-        Clientes satisfechos
+        <p>
+          <span>10</span>
+          Clientes satisfechos
+        </p>
       </div>
       <div class="achivements__item">
-        <span>10</span>
-        Proyectos concluidos
+        <p>
+          <span>10</span>
+          Proyectos concluidos
+        </p>
       </div>
     </section>
     <section class="technologies">
-      <article class="technologies__blog">
-        <h2>THE AMAZING <br>HUMBLE</h2>
-        <h2>Spend less Time Coding</h2>
-        <article class="blog-content">
+      <section class="technologies__blog">
+        <h2>
+          THE AMAZING <span class="blog__title">HUMBLE</span>
+          <span class="blog__subtitle">Spend less Time Coding</span>
+        </h2>
+        <section class="blog-content">
           <div class="blog-content__img">
             <img src="images/goku-coding.png" alt="blog-image">
           </div>
           <div class="blog-content__description">
-            <section>
+            <article>
               <h3>Become a power-user</h3>
               <p>
                 If you spend a good percentage of your Time
                 coding in a specific enviroment, you should
                 know exactly how to control it.
               </p>
-            </section>
-            <section>
+            </article>
+            <article>
               <h3>Know how to use Vim</h3>
               <p>
                 If you spend a good percentage of your Time
                 coding in a specific enviroment, you should
                 know exactly how to control it.
               </p>
-            </section>
+            </article>
           </div>
-        </article>
-      </article>
-      <article class="technologies__stack">
+        </section>
+      </section>
+      <section class="technologies__stack">
         <h4>Stack:</h4>
         <div class="stack-item">
-          <img src="images/esfera.png" alt="stack">
+          <img src="images/esfera.png" alt="">
           <div class="stack-item__details">
             <p>HTML</p>
             <span>95%</span>
           </div>
         </div>
         <div class="stack-item">
-          <img src="images/esfera.png" alt="stack">
+          <img src="images/esfera.png" alt="">
           <div class="stack-item__details">
             <p>CSS</p>
             <span>95%</span>
           </div>
         </div>
         <div class="stack-item">
-          <img src="images/esfera.png" alt="stack">
+          <img src="images/esfera.png" alt="">
           <div class="stack-item__details">
             <p>Javascript</p>
             <span>95%</span>
           </div>
         </div>
         <div class="stack-item">
-          <img src="images/esfera.png" alt="stack">
+          <img src="images/esfera.png" alt="">
           <div class="stack-item__details">
             <p>React</p>
             <span>95%</span>
           </div>
         </div>
         <div class="stack-item">
-          <img src="images/esfera.png" alt="stack">
+          <img src="images/esfera.png" alt="">
           <div class="stack-item__details">
             <p>E2E Testing</p>
             <span>95%</span>
           </div>
         </div>
-      </article>
+      </section>
     </section>
     <footer>
       <nav class="footer-nav">
