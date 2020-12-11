@@ -1,0 +1,151 @@
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  background-color: grey;
+  width: 80%;
+}
+.header {
+  display: flex;
+  background-color: white;
+  margin: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header__logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo img {
+  max-width: 50%;
+  height: auto;
+}
+.header__menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu ul{
+  list-style-type: none;
+  display: flex;
+  background-color: grey;
+  justify-content: center;
+  padding-left: 0;
+}
+.header__menu ul > li{
+  padding: 16px;
+}
+.header__menu ul > li a {
+  text-decoration: none;
+}
+.header__button {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header__button button:first-child {
+  margin-right: 16px;
+}
+.button {
+  padding: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.primary {
+  background-color: blue;
+  color: #ffffff;
+}
+.hero {
+  border: black 1px solid;
+  background: url(images/wasteland.png);
+  padding: 32px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #ffffff;
+}
+.hero__my-name {
+  display: flex;
+  font-size: 48px;
+}
+.achivements {
+  display: flex;
+  padding: 8px 32px;
+  margin: 0 16px;
+  justify-content: center;
+  border-bottom: solid 1px black;
+}
+.achivements__item {
+  flex: 1;
+  padding: 8px 0;
+}
+.achivements__item p>span {
+  font-size: 32px;
+}
+.technologies {
+  display: flex;
+  margin: 16px;
+  padding-bottom: 16px;
+  border-bottom: black 1px solid;
+}
+.technologies__blog {
+  flex: 2;
+}
+.technologies__blog > h2 {
+  text-align: center;
+  font-size: 12px;
+}
+.blog__title {
+  display: block;
+  margin-bottom: 16px;
+}
+.blog__subtitle {
+  font-size: 32px;
+}
+.blog-content {
+  display: flex;
+  justify-content: center;
+}
+.blog-content__img {
+  flex: 1;
+  margin: 16px;
+}
+.blog-content__img img {
+  max-width: 100%;
+  height: auto;
+  border: black solid 1px;
+}
+.blog-content__description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-content__description:last-child {
+  margin-bottom: 8px;
+}
+.technologies__stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  border-left: black 1px solid;
+  padding-left: 16px;
+}
+.stack-item {
+  display: flex;
+  margin-top: 16px;
+}
+.stack-item img { 
+  width: 40px;
+  height: 40px;
+}
+.stack-item__details p {
+  margin: 0;
+}
